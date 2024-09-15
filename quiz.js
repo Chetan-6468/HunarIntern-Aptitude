@@ -1,4 +1,4 @@
-// Global variable
+// Global variables
 let COUNT = 1;
 let array;
 
@@ -44,17 +44,20 @@ function getFunction() {
             $("#value4").text(value.options[3]);
             sessionStorage.setItem("que", value.question);
             sessionStorage.setItem("ans", value.answer);
+            $("#nextBtn").hide(); // Hide the "Next" button initially
+            $(".btn").attr("disabled", false); // Enable all options
         }
     } else {
         $("#value1").attr("disabled", true);
         $("#value2").attr("disabled", true);
         $("#value3").attr("disabled", true);
         $("#value4").attr("disabled", true);
+        $("#nextBtn").hide();
+        $("#submitBtn").show(); // Show the "Submit" button after all questions are answered
     }
-    COUNT++;
 }
 
-// Function to check answers
+// Function to check answers and show the "Next" button
 function process(value) {
     let selectedValue = value.innerText;
     let ans = sessionStorage.getItem("ans");
@@ -64,6 +67,13 @@ function process(value) {
         mark1++;
         sessionStorage.setItem("mark", mark1);
     }
+    $(".btn").attr("disabled", true); // Disable all options after selection
+    $("#nextBtn").show(); // Show the "Next" button when an option is selected
+}
+
+// Function to move to the next question
+function nextQuestion() {
+    COUNT++;
     getFunction();
 }
 
