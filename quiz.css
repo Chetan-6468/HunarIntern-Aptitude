@@ -1,13 +1,31 @@
- :root{
-      --color-1:18214A;
-      --color-2:4B4B71; 
-      --color-3:white;
+:root {
+      --color-1: #18214A;
+      --color-2: #4B4B71;
+      --color-3: #FFFFFF;
   }
-  .body
-  {
-      margin: 0px;
-      padding: 0px;
+  
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
   }
+  
+  .container-fluid {
+      position: relative; /* Make the container a relative position context for logo positioning */
+  }
+  
+  .logo-container {
+      position: absolute;
+      top: 10px; /* Adjust as needed */
+      left: 10px; /* Adjust as needed */
+      z-index: 1000; /* Ensure logo is above other content */
+  }
+  
+  .logo {
+      width: 100px; /* Default width for logo */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
   .timer {
       display: flex;
       justify-content: center;
@@ -24,116 +42,114 @@
       width: auto; /* Allows the width to adjust based on content */
       height: auto; /* Allows the height to adjust based on content */
   }
-  #name,#Result
- {
+  
+  #name, #Result {
       font-size: 3rem;
-      color: white;
+      color: var(--color-3);
       font-weight: bold;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
-      margin: 12;
- }
- .Startbtn
- {
+      margin: 12px;
+  }
+  
+  .Startbtn {
       background-color: var(--color-2);
       border-radius: 20px;
       width: 180px;
       height: 45px;
       font-family: Roboto;
-      color:var(--color-3);
+      color: var(--color-3);
       font-size: 25px;
       outline: none;
-
- }
- .Startbtn:hover
- {
+  }
+  
+  .Startbtn:hover {
       background-color: var(--color-1);
- }
- .col-sm.r 
- {
-     margin: 0;
-     padding: 0;
-     background-color: var(--color-1);
-     background-repeat: no-repeat;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     height: 100vh;
- }
-.row
-{
-     height: 100vh;
-}
-#link,#image
-{
+  }
+  
+  .col-sm.r {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-1);
+      background-repeat: no-repeat;
       justify-content: center;
       align-items: center;
       display: flex;
-      margin: 15;
-}
-.col-sm.r2
-{
-     margin: 0;
-     padding: 0;
-     background-color: var(--color-3);
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     height: 100vh;
-}
-p
-{
-     display: contents;
-}
-#instr
-{
+      height: 100vh;
+  }
+  
+  .row {
+      height: 100vh;
+  }
+  
+  #link, #image {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 15px;
+  }
+  
+  .col-sm.r2 {
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-3);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 100vh;
+  }
+  
+  p {
+      display: contents;
+  }
+  
+  #instr {
       color: var(--color-3);
       font-size: 2rem;
       display: flex;
-}
-#InstructionsHead
-{
-      color:var(--color-3);
+  }
+  
+  #InstructionsHead {
+      color: var(--color-3);
       font-size: 3rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 35;
-
-}
-.btn
-{
-      width: 250;
-      height: 40;
-      left: 50.27px;
-      justify-content: center;
-      align-content: center;
+      margin-bottom: 35px;
+  }
+  
+  .btn {
+      width: 250px;
+      height: 40px;
       border: 1px solid #3E8BD5;
-      box-sizing: border-box;
       border-radius: 20px;
-      margin: 10;
+      margin: 10px;
       outline: none;
-}
-.btn:hover 
-{
-      background-color: var(--color-1) ;
-      color: var(--color-3);
-      text-decoration: none;
-      outline: none;
-}
-.option1
-{
+      display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  .btn:hover {
+      background-color: var(--color-1);
+      color: var(--color-3);
+  }
+  
+  .option1 {
       display: flex;
+      justify-content: center;
+      align-items: center;
       outline: none;
-}
-.InstructionDiv
-{
-      margin-bottom: 40;
-}
-#que {
+  }
+  
+  .InstructionDiv {
+      margin-bottom: 40px;
+  }
+  
+  #que {
       font-size: 15px;
   }
   
@@ -148,21 +164,81 @@ p
       color: #333; /* Darker text color */
   }
   
-#QuestionNo
-{
-      font-size: 20;
+  #QuestionNo {
+      font-size: 20px;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
-}
-.logo-container {
-      position: absolute;
-      top: 10px; /* Adjust as needed */
-      left: 10px; /* Adjust as needed */
-      z-index: 1000; /* Ensure logo is above other content */
   }
   
-  .logo {
-      width: 100px; /* Adjust the width of the logo */
-      height: auto;
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .logo {
+          width: 80px; /* Adjust logo size for medium screens */
+      }
+  
+      .Startbtn {
+          width: 150px;
+          height: 40px;
+          font-size: 1.2rem;
+      }
+  
+      #name, #Result {
+          font-size: 2rem;
+          margin: 10px;
+      }
+  
+      .btn {
+          width: 200px;
+          height: 35px;
+          font-size: 1rem;
+      }
+  
+      #instr, #InstructionsHead {
+          font-size: 1.5rem;
+      }
+  
+      #que {
+          font-size: 1.5rem;
+      }
+  
+      #QuestionNo {
+          font-size: 1.2rem;
+      }
   }
+  
+  @media (max-width: 480px) {
+      .logo {
+          width: 60px; /* Adjust logo size for small screens */
+      }
+  
+      .Startbtn {
+          width: 120px;
+          height: 35px;
+          font-size: 1rem;
+      }
+  
+      #name, #Result {
+          font-size: 1.5rem;
+          margin: 5px;
+      }
+  
+      .btn {
+          width: 150px;
+          height: 30px;
+          font-size: 0.9rem;
+      }
+  
+      #instr, #InstructionsHead {
+          font-size: 1.2rem;
+      }
+  
+      #que {
+          font-size: 1.2rem;
+      }
+  
+      #QuestionNo {
+          font-size: 1rem;
+      }
+  }
+  
