@@ -17,14 +17,31 @@
   .logo-container {
       position: absolute;
       top: 10px; /* Adjust as needed */
-      left: 10px; /* Adjust as needed */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center the logo */
       z-index: 1000; /* Ensure logo is above other content */
+      text-align: center;
   }
   
   .logo {
-      width: 100px; /* Default width for logo */
+      width: 150px; /* Default width */
       height: auto; /* Maintain aspect ratio */
   }
+  
+  /* Responsive adjustments for logo */
+  @media (max-width: 768px) {
+      .logo {
+          width: 120px; /* Adjust for medium screens */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .logo {
+          width: 90px; /* Adjust for small screens */
+      }
+  }
+  
+  
   
   .timer {
       display: flex;
@@ -39,7 +56,7 @@
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       color: #333; /* Darker text color */
       font-family: Arial, sans-serif; /* Font style */
-      width: auto; /* Allows the width to adjust based on content */
+      width: 100px; /* Allows the width to adjust based on content */
       height: auto; /* Allows the height to adjust based on content */
   }
   
@@ -150,7 +167,7 @@
   }
   
   #que {
-      font-size: 15px;
+      font-size: 20px;
   }
   
   .question-box {
@@ -165,7 +182,7 @@
   }
   
   #QuestionNo {
-      font-size: 20px;
+      font-size: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
