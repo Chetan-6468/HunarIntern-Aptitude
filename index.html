@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
+    <title>Hunarintern - Aptitude</title>
+    <link rel="icon" type="image/x-icon" href="logo2.jpeg">
+
     <style>
         body {
             display: flex;
@@ -45,14 +47,21 @@
         button:hover {
             background-color: #45a049;
         }
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h2>Enter Pincode or Name</h2>
+        <h2>Enter Passcode or Name</h2>
         <form id="redirectForm">
-            <input type="text" id="pincode" placeholder="Enter Pincode or Name" required>
+            <input type="text" id="pincode" placeholder="Enter Passcode" required>
+            <div id="pincodeError" class="error"></div>
             <input type="text" id="name" placeholder="Enter Your Name" required>
             <button type="submit">Submit</button>
         </form>
@@ -62,19 +71,23 @@
         document.getElementById('redirectForm').addEventListener('submit', function(event) {
             event.preventDefault();  // Prevent form from submitting the usual way
             
+            // Clear previous error messages
+            document.getElementById('pincodeError').textContent = '';
+
             // Get the values from the input fields
             let pincode = document.getElementById('pincode').value.trim().toLowerCase();
             let name = document.getElementById('name').value.trim().toLowerCase();
 
-            // Check if the pincode is "Hunar" or if the name matches
+          
             if (pincode === "hunar-aptitude") {
-                // Redirect based on pincode
-                window.location.href = "home.html";  // Redirect to another page for pincode
-            } else if (name === "chetan") {
-                // Redirect based on name
-                window.location.href = "namePage.html";  // Redirect to another page for name
+
+                window.location.href = "home.html"; 
+            } else if (name === "chetan*") {
+          
+                window.location.href = "index.html";  
             } else {
-                alert("Invalid pincode or name. Please try again.");
+         
+                document.getElementById('pincodeError').textContent = "Invalid Passcode. Please try again.";
             }
         });
     </script>

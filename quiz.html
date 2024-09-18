@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Test</title>
+    <link rel="icon" type="image/x-icon" href="logo2.jpeg">
+    <style>
+        :root {
+            --primary-color: #1E2A78;
+            --secondary-color: #2C3E50;
+            --light-color: #ECF0F1;
+            --highlight-color: #27ae60;
+            --border-color: #BDC3C7;
+            --text-color: #2C3E50;
+            --btn-border-radius: 25px;
+            --box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+            --btn-padding: 12px 24px;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background: linear-gradient(135deg, #a0c4ff, #c8d6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 700px;
+            background: var(--light-color);
+            border-radius: 20px;
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        .timer {
+            font-size: 28px;
+            background: var(--light-color);
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            padding: 12px 24px;
+            color: var(--text-color);
+            margin: 10px 0;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        #QuestionNo {
+            font-size: 26px;
+            color: var(--text-color);
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .question-box {
+            background: var(--light-color);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: var(--box-shadow);
+            font-size: 20px;
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .option1 {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .btn {
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: var(--btn-border-radius);
+            background: var(--light-color);
+            color: var(--text-color);
+            font-size: 18px;
+            font-weight: 600;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            padding: var(--btn-padding);
+            box-shadow: var(--box-shadow);
+        }
+
+        .btn:hover {
+            background: var(--primary-color);
+            color: var(--light-color);
+            transform: scale(1.05);
+        }
+
+        #nextBtn {
+            background: var(--secondary-color);
+            color: var(--light-color);
+            margin-top: 20px;
+        }
+
+        #nextBtn:hover {
+            background: var(--primary-color);
+        }
+
+        #submitBtn {
+            background: var(--highlight-color);
+            color: var(--light-color);
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        #submitBtn:hover {
+            background: #1e8e50;
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                width: 120px;
+            }
+
+            .btn, #nextBtn, #submitBtn {
+                height: 45px;
+                font-size: 16px;
+            }
+
+            #QuestionNo {
+                font-size: 22px;
+            }
+
+            .question-box {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container img {
+                width: 100px;
+            }
+
+            .btn, #nextBtn, #submitBtn {
+                height: 40px;
+                font-size: 14px;
+            }
+
+            #QuestionNo {
+                font-size: 20px;
+            }
+
+            .question-box {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+        
+
+        /* Define the startbtn class */
+.startbtn {
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for startbtn */
+.startbtn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* Active state for startbtn */
+.startbtn:active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transform: scale(0.98); /* Slightly shrink when pressed */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="logo-container">
+                <img src="logo.png" alt="Quiz Logo">
+            </div>
+            <div class="data">
+                <p id="timer" class="timer">02:20</p>
+                <div id="QuestionNo">Question <span id="queno">1</span> of 25</div>
+                <div class="question-box">
+                    <p id="que">What is the financial capital of India?</p>
+                </div>
+                <div class="options" id="answer-select">
+                    <div class="option1"><button id="value1" class="btn" onclick="process(this);">Mumbai</button></div>
+                    <div class="option1"><button id="value2" class="btn" onclick="process(this);">Delhi</button></div>
+                    <div class="option1"><button id="value3" class="btn" onclick="process(this);">Pune</button></div>
+                    <div class="option1"><button id="value4" class="btn" onclick="process(this);">Panaji</button></div>
+                </div>
+                <div id="link">
+                    <button id="nextBtn" class="startbtn" onclick="nextQuestion()" style="display:none;">Next</button>
+                    <a href="result.html" id="submitBtn" class="btn" style="display:none;">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

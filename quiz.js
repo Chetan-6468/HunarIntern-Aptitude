@@ -79,7 +79,7 @@ function nextQuestion() {
 
 // Function to set timer
 function startTimer() {
-    var time_in_minutes = 25;
+    var time_in_minutes = 30;
     var current_time = Date.parse(new Date());
     var deadline = new Date(current_time + time_in_minutes * 60 * 1000);
 

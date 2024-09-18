@@ -80,6 +80,24 @@ body {
     background-color: var(--color-1);
 }
 
+.submitbtn {
+    background-color: var(--color-2);
+    border-radius: 20px;
+    width: 180px;
+    height: 45px;
+    font-family: Roboto;
+    color: var(--color-3);
+    font-size: 25px;
+    outline: none;
+}
+
+
+
+.submitbtn:hover {
+    background-color: var(--color-1);
+}
+
+
 .col-sm.r {
     margin: 0;
     padding: 0;
@@ -210,7 +228,7 @@ p {
     }
 
     #que {
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 
     #QuestionNo {
@@ -224,9 +242,9 @@ p {
     }
 
     .Startbtn {
-        width: 120px;
+        width: 220px;
         height: 35px;
-        font-size: 1rem;
+        font-size: 2px;
     }
 
     #name, #Result {
@@ -245,10 +263,36 @@ p {
     }
 
     #que {
-        font-size: 1.2rem;
+        font-size:20px;
     }
 
     #QuestionNo {
         font-size: 1rem;
     }
 }
+
+.Takebtn {
+    background-color: #031a33; /* Bright blue background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Add padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for padding and margin */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.Takebtn:hover {
+    background-color: #031a33; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.Takebtn:active {
+    background-color: #031a33; /* Even darker blue when pressed */
+    transform: scale(0.95); /* Slightly shrink when pressed */
+}
+
