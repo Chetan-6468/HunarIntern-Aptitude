@@ -1,261 +1,254 @@
 :root {
-      --color-1: #18214A;
-      --color-2: #4B4B71;
-      --color-3: #FFFFFF;
-  }
-  
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-  }
-  
-  .container-fluid {
-      position: relative; /* Make the container a relative position context for logo positioning */
-  }
-  
-  .logo-container {
-      position: absolute;
-      top: 10px; /* Adjust as needed */
-      left: 50%; /* Center horizontally */
-      transform: translateX(-50%); /* Center the logo */
-      z-index: 1000; /* Ensure logo is above other content */
-      text-align: center;
-  }
-  
-  .logo {
-      width: 150px; /* Default width */
-      height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Responsive adjustments for logo */
-  @media (max-width: 768px) {
-      .logo {
-          width: 120px; /* Adjust for medium screens */
-      }
-  }
-  
-  @media (max-width: 480px) {
-      .logo {
-          width: 90px; /* Adjust for small screens */
-      }
-  }
-  
-  
-  
-  .timer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px; /* Ensure font size includes 'px' */
-      background-color: #f0f0f0; /* Light background color */
-      border: 2px solid #ccc; /* Gray border */
-      border-radius: 8px; /* Rounded corners */
-      padding: 10px 20px; /* Adjusted space inside the box to fit the size of the text */
-      margin: 20px 0; /* Space outside the box */
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      color: #333; /* Darker text color */
-      font-family: Arial, sans-serif; /* Font style */
-      width: 100px; /* Allows the width to adjust based on content */
-      height: auto; /* Allows the height to adjust based on content */
-  }
-  
-  #name, #Result {
-      font-size: 3rem;
-      color: var(--color-3);
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 12px;
-  }
-  
-  .Startbtn {
-      background-color: var(--color-2);
-      border-radius: 20px;
-      width: 180px;
-      height: 45px;
-      font-family: Roboto;
-      color: var(--color-3);
-      font-size: 25px;
-      outline: none;
-  }
-  
-  .Startbtn:hover {
-      background-color: var(--color-1);
-  }
-  
-  .col-sm.r {
-      margin: 0;
-      padding: 0;
-      background-color: var(--color-1);
-      background-repeat: no-repeat;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      height: 100vh;
-  }
-  
-  .row {
-      height: 100vh;
-  }
-  
-  #link, #image {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      margin: 15px;
-  }
-  
-  .col-sm.r2 {
-      margin: 0;
-      padding: 0;
-      background-color: var(--color-3);
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      height: 100vh;
-  }
-  
-  p {
-      display: contents;
-  }
-  
-  #instr {
-      color: var(--color-3);
-      font-size: 2rem;
-      display: flex;
-  }
-  
-  #InstructionsHead {
-      color: var(--color-3);
-      font-size: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 35px;
-  }
-  
-  .btn {
-      width: 250px;
-      height: 40px;
-      border: 1px solid #3E8BD5;
-      border-radius: 20px;
-      margin: 10px;
-      outline: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-  }
-  
-  .btn:hover {
-      background-color: var(--color-1);
-      color: var(--color-3);
-  }
-  
-  .option1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      outline: none;
-  }
-  
-  .InstructionDiv {
-      margin-bottom: 40px;
-  }
-  
-  #que {
-      font-size: 20px;
-  }
-  
-  .question-box {
-      background-color: #f9f9f9; /* Light gray background */
-      border: 2px solid #ccc; /* Gray border */
-      border-radius: 8px; /* Rounded corners */
-      padding: 20px; /* Space inside the box */
-      margin: 20px 0; /* Space outside the box */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      font-size: 20px; /* Font size for the question */
-      color: #333; /* Darker text color */
-  }
-  
-  #QuestionNo {
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-      .logo {
-          width: 80px; /* Adjust logo size for medium screens */
-      }
-  
-      .Startbtn {
-          width: 150px;
-          height: 40px;
-          font-size: 1.2rem;
-      }
-  
-      #name, #Result {
-          font-size: 2rem;
-          margin: 10px;
-      }
-  
-      .btn {
-          width: 200px;
-          height: 35px;
-          font-size: 1rem;
-      }
-  
-      #instr, #InstructionsHead {
-          font-size: 1.5rem;
-      }
-  
-      #que {
-          font-size: 1.5rem;
-      }
-  
-      #QuestionNo {
-          font-size: 1.2rem;
-      }
-  }
-  
-  @media (max-width: 480px) {
-      .logo {
-          width: 60px; /* Adjust logo size for small screens */
-      }
-  
-      .Startbtn {
-          width: 120px;
-          height: 35px;
-          font-size: 1rem;
-      }
-  
-      #name, #Result {
-          font-size: 1.5rem;
-          margin: 5px;
-      }
-  
-      .btn {
-          width: 150px;
-          height: 30px;
-          font-size: 0.9rem;
-      }
-  
-      #instr, #InstructionsHead {
-          font-size: 1.2rem;
-      }
-  
-      #que {
-          font-size: 1.2rem;
-      }
-  
-      #QuestionNo {
-          font-size: 1rem;
-      }
-  }
-  
+    --color-1: #18214A;
+    --color-2: #4B4B71;
+    --color-3: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 90px;
+    }
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px 0; /* Reduced margin for better fit */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    width: 100px;
+}
+
+#name, #Result {
+    font-size: 3rem;
+    color: var(--color-3);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.Startbtn {
+    background-color: var(--color-2);
+    border-radius: 20px;
+    width: 180px;
+    height: 45px;
+    font-family: Roboto;
+    color: var(--color-3);
+    font-size: 25px;
+    outline: none;
+}
+
+.Startbtn:hover {
+    background-color: var(--color-1);
+}
+
+.col-sm.r {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    height: 100vh;
+}
+
+#link, #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.col-sm.r2 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    display: contents;
+}
+
+#instr {
+    color: var(--color-3);
+    font-size: 2rem;
+    display: flex;
+}
+
+#InstructionsHead {
+    color: var(--color-3);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.btn {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #3E8BD5;
+    border-radius: 20px;
+    margin: 10px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.option1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.InstructionDiv {
+    margin-bottom: 40px;
+}
+
+#que {
+    font-size: 20px;
+}
+
+.question-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: #333;
+}
+
+#QuestionNo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+
+    .Startbtn {
+        width: 150px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    #name, #Result {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    .btn {
+        width: 200px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    #instr, #InstructionsHead {
+        font-size: 1.5rem;
+    }
+
+    #que {
+        font-size: 1.5rem;
+    }
+
+    #QuestionNo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;
+    }
+
+    .Startbtn {
+        width: 120px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    #name, #Result {
+        font-size: 1.5rem;
+        margin: 5px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    #instr, #InstructionsHead {
+        font-size: 1.2rem;
+    }
+
+    #que {
+        font-size: 1.2rem;
+    }
+
+    #QuestionNo {
+        font-size: 1rem;
+    }
+}
