@@ -3,156 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-   
+    <title>Redirect Page</title>
     <style>
-        /* Global settings */
-        body, html {
-            background-color: #18214A; /* Full background blue */
-            height: 100%;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            width: 200%;
-            padding: 20px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        .quiz-box {
-            background-color: #18214A;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 40px;
+        h2 {
             text-align: center;
+        }
+        input {
+            display: block;
             width: 100%;
-            max-width: 500px;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
-
-        /* Quiz header section */
-        .quiz-header img {
-            /* border-radius: 50%; */
-            margin-bottom: 5px;
-        }
-
-        .quiz-header h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        /* Instructions section */
-        .quiz-instructions {
-            margin-bottom: 30px;
-        }
-
-        .quiz-instructions h2 {
-            font-size: 1.8rem;
-            color: #ffffff;
-            margin-bottom: 15px;
-        }
-
-        .quiz-instructions p {
-            font-size: 1.2rem;
-            color: #c9c9c9;
-            line-height: 1.6;
-        }
-
-        /* Start button */
-        .start-btn {
-            background-color: #4B4B71;
-            color: #fff;
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
             border: none;
-            border-radius: 50px;
-            padding: 15px 40px;
-            font-size: 1.5rem;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
-
-        .start-btn:hover {
-            background-color: #001f57;
-        }
-
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            .quiz-header h1 {
-                font-size: 2rem;
-            }
-
-            .quiz-instructions h2 {
-                font-size: 1.5rem;
-            }
-
-            .quiz-instructions p {
-                font-size: 1.1rem;
-            }
-
-            .start-btn {
-                padding: 10px 30px;
-                font-size: 1.2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .quiz-box {
-                padding: 20px;
-            }
-
-            .quiz-header h1 {
-                font-size: 1.8rem;
-            }
-
-            .quiz-instructions h2 {
-                font-size: 1.3rem;
-            }
-
-            .quiz-instructions p {
-                font-size: 1rem;
-            }
-
-            .start-btn {
-                padding: 10px 25px;
-                font-size: 1rem;
-            }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
-
 <body>
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 quiz-box">
-                
-                <!-- Quiz Header -->
-                <div class="quiz-header">
-                    <img src="20231229_141525.png" alt="Quiz Logo" width="150" height="90">
-                    <h1>Aptitude Test</h1>
-                </div>
-
-                <!-- Quiz Instructions -->
-                <div class="quiz-instructions">
-                    <h2>Instructions</h2>
-                    <p>1. There are 10 questions in this quiz.</p>
-                    <p>2. Click on the answer that you think is correct.</p>
-                    <p>3. Continue till the end of the test.</p>
-                    <p>4. Click on submit to check your results.</p>
-                </div>
-
-                <!-- Start Button -->
-                <a href="index1.html"><button class="start-btn">Get Started</button></a>
-            </div>
-        </div>
+        <h2>Enter Pincode or Name</h2>
+        <form id="redirectForm">
+            <input type="text" id="pincode" placeholder="Enter Pincode or Name" required>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
-</body>  
+    <script>
+        document.getElementById('redirectForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form from submitting the usual way
+            
+            // Get the values from the input fields
+            let pincode = document.getElementById('pincode').value.trim().toLowerCase();
+            let name = document.getElementById('name').value.trim().toLowerCase();
+
+            // Check if the pincode is "Hunar" or if the name matches
+            if (pincode === "hunar-aptitude") {
+                // Redirect based on pincode
+                window.location.href = "home.html";  // Redirect to another page for pincode
+            } else if (name === "chetan") {
+                // Redirect based on name
+                window.location.href = "namePage.html";  // Redirect to another page for name
+            } else {
+                alert("Invalid pincode or name. Please try again.");
+            }
+        });
+    </script>
+
+</body>
 </html>
