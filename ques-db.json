@@ -10,16 +10,6 @@
 		"answer": "150 meters"
 	},
 	"q2": {
-		"question": "Two trains, each 100 m long, are moving in opposite directions with speeds of 30 km/hr and 45 km/hr. In how much time will they cross each other?",
-		"options": [
-			"8 seconds",
-			"10 seconds",
-			"12 seconds",
-			"14 seconds"
-		],
-		"answer": "8 seconds"
-	},
-	"q3": {
 		"question": "A sum of money at simple interest amounts to ?850 in 3 years and to ?1020 in 5 years. What is the principal amount?",
 		"options": [
 			"600",
@@ -29,27 +19,7 @@
 		],
 		"answer": "600"
 	},
-	"q4": {
-		"question": "A person borrows ?5000 for 2 years at 4% p.a. simple interest. The total amount to be paid after 2 years is:",
-		"options": [
-			"5,400",
-			"5,200",
-			"5,800",
-			"6,000"
-		],
-		"answer": "5,400"
-	},
-	"q5": {
-		"question": "If 20 men can build a wall 66 meters long in 6 days, what length of a similar wall can be built by 25 men in 3 days?",
-		"options": [
-			"33 meters",
-			"44 meters",
-			"55 meters",
-			"66 meters"
-		],
-		"answer": "55 meters"
-	},
-	"q6": {
+	"q3": {
 		"question": "A man can row 9 km/hr in still water. If the river is running at 3 km/hr, it takes him 2 hours to row to a place and come back. How far is the place?",
 		"options": [
 			"6 km",
@@ -59,37 +29,7 @@
 		],
 		"answer": "9 km"
 	},
-	"q7": {
-		"question": "A train 150 m long is running at a speed of 90 km/hr. How long will it take to cross a bridge 300 m long?",
-		"options": [
-			"15 seconds",
-			"18 seconds",
-			"20 seconds",
-			"24 seconds"
-		],
-		"answer": "18 seconds"
-	},
-	"q8": {
-		"question": "A bag contains 6 red balls, 4 green balls, and 5 blue balls. If one ball is drawn at random, what is the probability that it is green?",
-		"options": [
-			"1/3",
-			"2/5",
-			"4/15",
-			"1/4"
-		],
-		"answer": "4/15"
-	},
-	"q9": {
-		"question": "The average of five consecutive odd numbers is 45. What is the largest number?",
-		"options": [
-			"47",
-			"49",
-			"51",
-			"53"
-		],
-		"answer": "49"
-	},
-	"q10": {
+	"q4": {
 		"question": "The sum of the ages of 5 children born at the intervals of 3 years each is 50 years. What is the age of the youngest child?",
 		"options": [
 			"4 years",
@@ -99,7 +39,7 @@
 		],
 		"answer": "4 years"
 	},
-	"q11": {
+	"q5": {
 		"question": "A fruit seller had some apples. He sells 40% apples and still has 420 apples. How many apples did he originally have?",
 		"options": [
 			"600",
@@ -108,18 +48,9 @@
 			"900"
 		],
 		"answer": "700"
+	
 	},
-	"q12": {
-		"question": "If a person can do a piece of work in 30 days, and with the help of another person, they can do it in 20 days, how long will it take for the second person to do the work alone?",
-		"options": [
-			"40 days",
-			"50 days",
-			"60 days",
-			"70 days"
-		],
-		"answer": "60 days"
-	},
-	"q13": {
+	"q6": {
 		"question": "A shopkeeper bought 80 kg of sugar at ?13.50 per kg and mixed it with 120 kg of sugar at ?16 per kg. He sold the mixture at ?15 per kg. His gain is:",
 		"options": [
 			"0.5%",
@@ -129,7 +60,7 @@
 		],
 		"answer": "1%"
 	},
-	"q14": {
+	"q7": {
 		"question": "A wheel of diameter 2 meters makes 120 revolutions in 1 minute. What is the speed of the wheel in km/hr?",
 		"options": [
 			"45.2",
@@ -139,7 +70,7 @@
 		],
 		"answer": "45.2"
 	},
-	"q15": {
+	"q8": {
 		"question": "A car covers a distance of 420 km at a speed of 60 km/hr. How much time does it take to cover half the distance?",
 		"options": [
 			"3.5 hours",
@@ -149,7 +80,7 @@
 		],
 		"answer": "3.5 hours"
 	},
-	"q16": {
+	"q9": {
 		"question": "If the cost price of 12 pens is equal to the selling price of 8 pens, what is the gain percentage?",
 		"options": [
 			"25%",
@@ -159,47 +90,7 @@
 		],
 		"answer": "50%"
 	},
-	"q17": {
-		"question": "A man spends 40% of his income on rent, 25% on food, and 15% on transport. If he has ?3000 left, what is his total income?",
-		"options": [
-			"12,000",
-			"10,000",
-			"8,000",
-			"6,000"
-		],
-		"answer": "10,000"
-	},
-	"q18": {
-		"question": "A sum of money is divided among A, B, and C in the ratio of 3:4:5. If C gets ?200 more than B, what is A’s share?",
-		"options": [
-			"400",
-			"600",
-			"800",
-			"1000"
-		],
-		"answer": "600"
-	},
-	"q19": {
-		"question": "Two trains are running in opposite directions with speeds of 54 km/hr and 36 km/hr. If they take 10 seconds to cross each other, what is the length of each train?",
-		"options": [
-			"120 meters",
-			"150 meters",
-			"180 meters",
-			"200 meters"
-		],
-		"answer": "150 meters"
-	},
-	"q20": {
-		"question": "A person walks 5 km towards the East, then 4 km towards the North. What is the shortest distance from his starting point?",
-		"options": [
-			"7 km",
-			"8 km",
-			"9 km",
-			"10 km"
-		],
-		"answer": "7 km"
-	},
-	"q21": {
+	"q10": {
 		"question": "In a lottery, there are 10 prizes and 25 blanks. A lottery is drawn at random. What is the probability of getting a prize?",
 		"options": [
 			"1/3",
@@ -209,37 +100,7 @@
 		],
 		"answer": "2/7"
 	},
-	"q22": {
-		"question": "If the radius of a circle is increased by 50%, what will be the increase in its area?",
-		"options": [
-			"50%",
-			"100%",
-			"125%",
-			"150%"
-		],
-		"answer": "125%"
-	},
-	"q23": {
-		"question": "The cost of 12 kgs of rice is ?180. What will be the cost of 21 kgs of rice?",
-		"options": [
-			"315",
-			"310",
-			"320",
-			"330"
-		],
-		"answer": "315"
-	},
-	"q24": {
-		"question": "A man sells two watches for ?2400 each. On one, he gains 20% and on the other, he loses 20%. What is his overall gain or loss percentage?",
-		"options": [
-			"2% loss",
-			"2% gain",
-			"4% loss",
-			"no gain no loss"
-		],
-		"answer": "no gain no loss"
-	},
-	"q25": {
+	"q11": {
 		"question": "If 6 men can complete a piece of work in 8 days, how many men are required to complete the same work in 4 days?",
 		"options": [
 			"10 men",
@@ -248,5 +109,200 @@
 			"18 men"
 		],
 		"answer": "12 men"
+},
+"q12": {
+	"question": "The average age of 5 members of a family is 24 years. If the age of the youngest member is 12 years, what is the average age of the remaining four members?",
+	"options": [
+		"26 years",
+		"27 years",
+		"28 years",
+		"30 years"
+	],
+	"answer": "27 years"
+},
+"q13": {
+	"question": "In how many different ways can the letters of the word 'APPLE' be arranged?",
+	"options": [
+		"60",
+		"120",
+		"240",
+		"360"
+	],
+	"answer": "60"
+},
+"q14": {
+	"question": "A box contains 3 red balls, 4 blue balls, and 5 green balls. If one ball is drawn at random, what is the probability that it is a blue ball?",
+	"options": [
+		"1/3",
+		"2/5",
+		"1/4",
+		"4/12"
+	],
+	"answer": "1/3"
+},
+"q15": {
+	"question": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+	"options": [
+		"Mother",
+		"Aunt",
+		"Sister",
+		"Grandmother"
+	],
+	"answer": "Mother"
+
+
+},
+"q16": {
+	"question": "What day of the week was 15th August 1947?",
+	"options": [
+		"Monday",
+		"Wednesday",
+		"Friday",
+		"Thursday"
+	],
+	"answer": "Friday"
+},
+"q17": {
+	"question": "At what time between 4 and 5 o'clock will the hands of a clock be at right angles?",
+	"options": [
+		"4:22",
+		"4:30",
+		"4:38",
+		"4:45"
+	],
+	"answer": "4:38"
+},
+
+"q18": {
+	"question": "The team have finished their project on time.",
+	"options": [
+		"have",
+		"finished",
+		"their",
+		"project"
+	],
+	"answer": "have"
+},
+"q19": {
+	"question": "What is the synonym of 'happy'?",
+	"options": [
+		"Sad",
+		"Joyful",
+		"Angry",
+		"Upset"
+	],
+	"answer": "Joyful"
+},
+"q20": {
+	"question": "Rearrange to form a correct sentence: 'the book / is / on the table'.",
+	"options": [
+		"The book is on the table.",
+		"Is the book on the table.",
+		"On the table is the book.",
+		"Book is the table on."
+	],
+	"answer": "The book is on the table."
+},
+"q21": {
+	"question": "The girl sings good. Improve the sentence.",
+	"options": [
+		"The girl sings well.",
+		"The girl is good at singing.",
+		"The girl sing good.",
+		"The girl is a good singer."
+	],
+	"answer": "The girl sings well."
+},
+"q22": {
+	"question": "A person who studies insects.",
+	"options": [
+		"Entomologist",
+		"Biologist",
+		"Zoologist",
+		"Botanist"
+	],
+	"answer": "Entomologist"
+},
+
+"q23": {
+	"question": "A collection of maps.",
+	"options": [
+		"Atlas",
+		"Dictionary",
+		"Encyclopedia",
+		"Gazetteer"
+	],
+	"answer": "Atlas"
+},
+"q24": {
+	"question": "Arrange the sentences in correct order: 1. The cat chased the mouse. 2. The mouse ran into a hole. 3. The cat was hungry. 4. The cat waited patiently.",
+	"options": [
+		"3, 1, 4, 2",
+		"1, 3, 4, 2",
+		"3, 4, 1, 2",
+		"1, 4, 2, 3"
+	],
+	"answer": "3, 1, 4, 2"
+},
+
+	"q25": {
+		"question": "A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
+		"options": [
+			"120 meters",
+			"150 meters",
+			"180 meters",
+			"200 meters"
+		],
+		"answer": "150 meters"
+	},
+	"q26": {
+		"question": "A man can row 6 km/hr in still water. If the river is running at 2 km/hr, it takes him 1 hour to row to a place and come back. How far is the place?",
+		"options": [
+			"2.4 km",
+			"3 km",
+			"4 km",
+			"5 km"
+		],
+		"answer": "2.4 km"
+	},
+	"q27": {
+		"question": "The average of 5 consecutive numbers is 35. What is the largest of these numbers?",
+		"options": [
+			"33",
+			"35",
+			"37",
+			"39"
+		],
+		"answer": "37"
+	},
+	"q28": {
+		"question": "In how many different ways can the letters of the word 'LEADER' be arranged?",
+		"options": [
+			"360",
+			"720",
+			"1440",
+			"180"
+		],
+		"answer": "360"
+	},
+	"q29": {
+		"question": "The price of a shirt increases by 25% and then decreases by 20%. What is the net change in price?",
+		"options": [
+			"0%",
+			"2% decrease",
+			"5% increase",
+			"10% decrease"
+		],
+		"answer": "0%"
+	},
+	"q30": {
+		"question": "If the cost price of 20 articles is equal to the selling price of 15 articles, what is the profit percentage?",
+		"options": [
+			"25%",
+			"33.33%",
+			"50%",
+			"20%"
+		],
+		"answer": "33.33%"
 	}
 }
